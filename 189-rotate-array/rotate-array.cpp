@@ -11,7 +11,9 @@ public:
     }
     void rotate(vector<int>& nums, int k) {
         int n=nums.size();
-        if(k%n==0) return ;
+        if(k%n==0) {
+            return ;
+            }
 
         k=k%n;
         reverse(nums,0,nums.size()-1);
