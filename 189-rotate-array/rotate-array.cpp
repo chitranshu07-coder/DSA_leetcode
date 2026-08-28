@@ -13,7 +13,7 @@ public:
         int n=nums.size();
         if(k%n==0) return ;
 
-        k%=n;
+        k=k%n;
         reverse(nums,0,nums.size()-1);
         reverse(nums,0,k-1);
         reverse(nums,k,nums.size()-1);
