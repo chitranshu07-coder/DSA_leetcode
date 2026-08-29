@@ -5,5 +5,5 @@ join Queue q2
 on q2.turn<=q1.turn
 group by q1.turn 
 having sum(q2.Weight)<=1000
-order by sum(q2.weight) desc
+order by q1.turn desc
 limit 1
